@@ -1,0 +1,14 @@
+.hide{
+  display: none;
+}
+
+thead {
+  font-weight: bold;
+}
+
+table, td{
+  padding: 4px;
+  text-align: center;
+  border-collapse: collapse;
+  border:1px solid #000;
+}

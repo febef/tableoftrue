@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table from Proposition</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+      
+    <section class="input">
+      <form action="#">
+        <label for="expression">Expresión:</label>
+        <input type="text" name="expression" id="expression" >
+        <input type="submit" id="resolve" value="Resolver!">
+      </form>
+    </section>
+
+    <section class="output">
+      <div id="loader" class="hide"><span>Loadding...</span></div>
+      <div id="tautologia" class="hide"><h2>Es una tautologia!</h2></div>
+      <table>
+        <thead id="vars"></thead>
+        <tbody id="values"></tbody>
+      </table>
+    </section>
+
+    <script src="/js/Resolver.js"> </script>
+    <script src="/js/main.js"> </script>
+  </body>
+</html> 

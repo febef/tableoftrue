@@ -88,7 +88,6 @@ input[type="submit"]:hover{
   cursor: pointer;
 }
 
-
 /* section output */
 .output{
   margin: 0 40px;
@@ -100,6 +99,7 @@ input[type="submit"]:hover{
 
 .hide{
   display: none;
+
 }
 
 thead {
@@ -158,5 +158,16 @@ p{
   border-radius: 10px;
   
 }
-
 /* end scroll */
+
+.tautologia{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tautologia > h2 {
+  margin: 0;
+  font-family: cursive;
+}
+

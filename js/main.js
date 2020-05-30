@@ -1,5 +1,4 @@
 
-
 const R = new Resolver(LogicOperators);
 
 // aux fucntions
@@ -15,6 +14,7 @@ const $ = (query, father) => {
 
 function main() {
   $("#resolve").onclick = submitOnClick;
+
 }
 
 function submitOnClick(e) {
@@ -23,11 +23,16 @@ function submitOnClick(e) {
   let tautologia = $("#tautologia");
   let thead=$("#vars");
   let tbody=$("#values");
+  const etable=$('table');
+  const section = $(".output");
+  
 
   thead.innerHTML="";
   tbody.innerHTML="";
   tautologia.classList.add("hide");
   loader.classList.remove("hide");
+  tautologia.classList.remove("tautologia");
+
   
   setTimeout(() => {
     let expression = $("#expression").value;
@@ -52,7 +57,13 @@ function submitOnClick(e) {
     }
     
     tbody.innerHTML=doom;
-    if(table.tautologia) tautologia.classList.remove("hide");
+    if(table.tautologia) {
+      tautologia.classList.remove("hide");
+      tautologia.classList.add("tautologia");
+      section.style.display = "block";
+      etable.style.margin = "0 auto";
+
+    }
 
     loader.classList.add("hide");
   },0);

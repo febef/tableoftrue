@@ -11,7 +11,6 @@ const $ = (query, father) => {
   }
 };
 
-
 function main() {
   $("#resolve").onclick = submitOnClick;
 
@@ -51,7 +50,7 @@ function submitOnClick(e) {
     for(let values of table) {
       doom+="<tr>";
       for(let p in values) {
-        doom+=`<td>${values[p]}</td>`;
+        doom+=`<td style="color:${(values[p]=="true")?"purple":"gray"}">${values[p]}</td>`;
       }
       doom+="</tr>";
     }

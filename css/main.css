@@ -267,6 +267,7 @@ p{
   table{
     display: block;
     overflow-x: auto;
+    width: 50%;
   }
   table,td{
     font-size: 19px;

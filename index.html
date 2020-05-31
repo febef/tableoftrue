@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table from Proposition</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="./img/calculadora.svg" type="image/x-icon">
   </head>
   <body>
-      
+    <header class="menu">
+      <div class="menu-box">
+        <span>Calculadora Lógica</span>
+      </div>
+    </header>
     <section class="input">
       <form action="#">
         <label for="expression">Expresión:</label>
@@ -17,7 +22,17 @@
     </section>
 
     <section class="output">
-      <div id="loader" class="hide"><span>Loadding...</span></div>
+      <div class="sk-cube-grid hide" id="loader">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
       <div id="tautologia" class="hide"><h2>Es una tautologia!</h2></div>
       <table>
         <thead id="vars"></thead>
@@ -25,6 +40,9 @@
       </table>
     </section>
 
+    <footer>
+      <p>Desarrollado con ❤ en Javascript</p>
+    </footer>
     <script src="/js/Resolver.js"> </script>
     <script src="/js/main.js"> </script>
   </body>
